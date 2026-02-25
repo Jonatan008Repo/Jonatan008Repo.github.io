@@ -1,0 +1,428 @@
+/**
+ * /*font
+ *
+ * @format
+ */
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../../assets/font/static/Oswald-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-ExtraLight";
+  src: url("../../assets/font/static/Oswald-ExtraLight.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("../../assets/font/static/Oswald-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../../assets/font/static/Oswald-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../../assets/font/static/Oswald-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-SemiBold";
+  src: url("../../assets/font/static/Oswald-SemiBold.ttf");
+  font-display: swap;
+}
+/*color*/
+:root {
+  --gray-0-color: #b8b8b8;
+  --orange-0-color: #f34511;
+  --red-0-color: #b32d24;
+  --green-0-color: #84926a;
+  --yellow-0-color: #efb82a;
+  --gray-1-color: #4c4a45;
+  --gray-1-0-color: #cdcfcc;
+  --dark-0-color: #171817;
+  --blue-0-color: #69abe1;
+  --blue-1-color: #064170;
+  --txt-1-size: 4em; /*20mm; */
+  --txt-2-size: 3em; /*16mm; */
+  --txt-3-size: 2em; /*14mm; */
+  --txt-4-size: 3em; /*12mm; */
+  --txt-5-size: 2em; /*10mm; */
+  --txt-6-size: 2em; /*8mm;  */
+  --txt-7-size: 1em; /*18mm; */
+  --txt-8-size: 1.8em; /*20px; */
+  --txt-9-size: 1.5em; /*20px; */
+  --val-px-1: 10px;
+  --val-px-2: 20px;
+  --val-px-3: 30px;
+  --val-px-4: 40px;
+  --val-px-5: 50px;
+}
+.dark-bg {
+  background-color: var(--dark-0-color) !important;
+}
+.red-bg {
+  background-color: var(--red-0-color) !important;
+}
+.white-colot-txt {
+  color: white;
+}
+.orange-colot-txt {
+  color: var(--orange-0-color);
+}
+.green-0-color-txt {
+  color: var(--green-0-color);
+}
+.yellow-0-color-txt {
+  color: var(--yellow-0-color);
+}
+.black-color-txt {
+  color: black;
+}
+.dark-0-color-txt {
+  color: var(--dark-0-color);
+}
+* {
+  font-family: "Oswald-ExtraLight";
+  color: var(--gray-0-color);
+}
+html,
+body {
+  display: inline;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+.container_j {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald-Bold";
+  margin: 0px;
+}
+h1 {
+  font-size: var(--txt-1-size);
+}
+h1 > span {
+  font-family: "Oswald-SemiBold";
+  font-size: var(--txt-7-size);
+}
+h2 {
+  font-size: var(--txt-2-size);
+}
+h2 > span {
+  font-family: "Oswald-SemiBold";
+}
+h3 {
+  font-size: var(--txt-3-size);
+}
+h4 {
+  font-size: var(--txt-4-size);
+}
+h5 {
+  font-size: var(--txt-5-size);
+}
+h6 {
+  font-size: var(--txt-6-size);
+}
+h1:before {
+  content: "//";
+  letter-spacing: -3mm;
+  padding-right: 7px;
+  color: var(--orange-0-color);
+}
+p {
+  margin: 0px;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+p.dark-0-color-txt > strong {
+  color: var(--dark-0-color);
+}
+p.dark-0-color-txt > strong > i {
+  color: var(--dark-0-color);
+}
+p > strong,
+p > b {
+  font-family: "Oswald-Bold";
+}
+p > address {
+  font-family: "Oswald-Light";
+}
+/*page error*/
+.the-flood {
+}
+.the-flood h1::before {
+  content: "//";
+  letter-spacing: -3mm;
+  padding-right: 7px;
+  color: var(--dark-0-color);
+}
+.btn-dia-corner {
+  height: 100%;
+  width: 100%;
+  background-color: var(--yellow-0-color);
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.btn-dia-corner > h3:after {
+  content: ">>";
+  padding-left: 7px;
+  letter-spacing: -3mm;
+  font-family: Oswald-ExtraLight;
+  color: var(--red-0-color);
+  font-size: var(--txt-8-size);
+}
+.btn-dia-corner > h3 > a {
+  font-family: "Oswald-Bold";
+  color: var(--dark-0-color);
+}
+.btn-dia-corner:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-right: 28px solid transparent;
+  border-left: 28px solid transparent;
+  border-top: 28px solid var(--yellow-0-color);
+  left: -28px;
+  right: -28px;
+  bottom: -28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.btn-dia-corner:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-right: 28px solid transparent;
+  border-left: 28px solid transparent;
+  border-bottom: 28px solid var(--yellow-0-color);
+  top: -28px;
+  left: -28px;
+  right: -28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+/*datos*/
+.container-j-d {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  /* margin: 30px 0; */
+  margin-top: 20px;
+  padding-left: 27px;
+  padding-right: 27px;
+  border-left: 5px solid var(--gray-0-color);
+}
+.pl-1 {
+  padding-left: var(--val-px-1);
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pt-1 {
+  padding-top: var(--val-px-1);
+}
+.pb-0 {
+  padding-bottom: 0px;
+}
+.pb-1 {
+  padding-bottom: var(--val-px-1);
+}
+.pb-2 {
+  padding-bottom: var(--val-px-2);
+}
+.pb-3 {
+  padding-bottom: var(--val-px-3);
+}
+.pb-4 {
+  padding-bottom: var(--val-px-4);
+}
+.pb-5 {
+  padding-bottom: var(--val-px-5);
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  background-color: var(--gray-0-color);
+}
+main {
+  margin-top: 60px;
+}
+nav {
+  background-color: var(--gray-0-color);
+}
+nav a {
+  color: var(--dark-0-color);
+  font-family: "Oswald-Bold";
+  font-size: var(--txt-9-size);
+  float: left;
+  display: block;
+  padding-left: 10px;
+  height: 100%;
+  text-decoration: none;
+}
+nav a.menu-h {
+  float: right;
+  padding-right: 15px;
+  padding-left: 00px;
+  cursor: pointer;
+}
+nav a.menu-h::after {
+  display: none;
+}
+nav a.menu-h i {
+  color: var(--dark-0-color);
+}
+nav a.active {
+  background-color: var(--dark-0-color);
+  color: var(--gray-1-0-color);
+}
+nav a.inactive {
+  text-decoration: line-through double var(--gray-0-color) 1px;
+  color: var(--gray-1-color);
+  cursor: not-allowed;
+}
+nav a::after {
+  content: "|";
+  font-family: Oswald-ExtraLight;
+  color: var(--red-0-color);
+  padding-left: 7px;
+}
+.list-social {
+  padding: 5px;
+}
+.list-social a {
+  position: relative;
+  display: inline-block;
+  font-family: "Oswald-Bold";
+  color: var(--dark-0-color);
+  width: 100%;
+  background-color: var(--blue-0-color);
+  margin: 30px 0 5px 0;
+  padding: 5px 0 10px 0;
+  text-align: center;
+  font-size: var(--txt-8-size);
+}
+.list-social a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-right: 28px solid transparent;
+  border-left: 28px solid transparent;
+  border-bottom: 20px solid var(--blue-1-color);
+  top: -20px;
+  left: -28px;
+  right: -28px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+/* .list-social a::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-right: 28px solid transparent;
+  border-left: 28px solid transparent;
+  border-top: 28px solid var(--blue-1-color);
+  bottom:-28px;
+  left: -28px;
+  right: -28px;
+  margin-left: 28px;
+  margin-right: 28px;
+} */
+/* page social */
+.list-social .fa {
+  color: var(--blue-1-color);
+  position: absolute;
+  left: 0px;
+  padding-left: 10px;
+}
+.list-social img {
+  position: absolute;
+  left: 0px;
+  padding-left: 10px;
+  height: 38px;
+}
+.cookie-container {
+  position: fixed;
+  display: none;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: 400ms;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+}
+.cookie-container.active {
+  bottom: 0;
+  display: block;
+}
+.cookie-content {
+  background-color: var(--yellow-0-color);
+  color: var(--dark-0-color);
+  padding: 15px;
+}
+.cookie-content .buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.cookie-content .buttons button {
+  padding: 10px 15px;
+  border: none;
+  outline: 0;
+  font-size: var(--txt-7-size);
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cookie-content .buttons button:hover {
+  transform: scale(0.97);
+  background-color: var(--gray-1-color);
+  color: var(--gray-1-0-color);
+}
+.buttons .item {
+  margin: 0 10px;
+  color: var(--gray-1-color);
+}
+.cookie-content .buttons a {
+  font-weight: 700;
+}
+footer {
+  background-color: var(--gray-0-color);
+  position: absolute;
+  position: 0px;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+footer p {
+  color: var(--gray-1-color);
+}
+footer a {
+  color: var(--gray-1-color);
+}
