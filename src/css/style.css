@@ -154,7 +154,7 @@
 }
 html,
 body {
-	display: inline;
+	display: block;
 	position: relative;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
@@ -164,10 +164,11 @@ body {
 }
 .container_j {
 	width: 90%;
-	min-width: 1160px;
 	max-width: 1280px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 h1,
 h2,
@@ -212,13 +213,6 @@ h1:before {
 	color: var(--orange-0-color);
 }
 
-/*
-Todo:Ancho de contenido recomendado:
-Desktop general: contenedor principal entre 1160 y 1280.
-Lectura de párrafos: ancho útil de 520 a 680.
-Mobile: margen lateral constante de 20 a 24.
-*/
-
 .header-logo {
 	height: 30px;
 	width: 30px;
@@ -228,8 +222,7 @@ p {
 	margin: 0px;
 	text-align: justify;
 	padding-bottom: 10px;
-	min-width: 520px;
-	max-width: 680px;
+
 }
 p.dark-0-color-txt > strong {
 	color: var(--dark-0-color);

@@ -19,53 +19,43 @@
 			rel="stylesheet"
 			href="src/css/font/font-awesome-4.7.0/css/font-awesome.min.css" />
 		<title>Jonatan Vergara Escobar</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-227543667-1"></script>
+		<!-- Google Analytics GA4 -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRZQWGY9EQ"></script>
 		<script>
 			window.dataLayer = window.dataLayer || []
 			function gtag() {
 				dataLayer.push(arguments)
 			}
 			gtag("js", new Date())
-			gtag("config", "UA-227543667-1")
+			gtag("config", "G-RRZQWGY9EQ")
 		</script>
-		<!-- Global site tag (gtag.js) - Google Analytics
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRZQWGY9EQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-RRZQWGY9EQ');
-  </script>-->
 	</head>
 	<body class="dark-bg">
 		<header>
 			<nav>
 				<section>
 					<!--TODO Nombre de marca personal o logotipo verbal. -->
-					<a class="active" href="index.html">
+					<a class="nav__brand" href="#hero" aria-label="Inicio">
 						<img
 							src="assets/img/favicon.ico"
 							alt="Logo de Jonatan"
 							class="header-logo" />
 						Jonatan 008
 					</a>
-					<a class="inactive" href="Proyectos.html">Proyectos</a>
-					<a class="inactive" href="Servicios.html">Servicios</a>
-					<a class="inactive" href="Blog.html">Blog</a>
-					<a class="inactive" href="Sobre mi.html">Sobre mi</a>
-					<a class="" href="Contacto.html">Contacto</a>
-					<a class="menu-h"
-						><i class="fa fa-bars" aria-hidden="true"></i
-					></a>
+					<a href="#proyectos">Proyectos</a>
+					<a href="#servicios">Servicios</a>
+					<a href="#blog">Blog</a>
+					<a href="#sobre-mi">Sobre mí</a>
+					<a href="#contacto">Contacto</a>
+					<button class="menu-h" aria-label="Abrir menú" aria-expanded="false">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
 				</section>
 			</nav>
 		</header>
 		<main class="container_j">
-			<section>
-				<h1>
+			<section id="hero" aria-labelledby="heading-hero">
+				<h1 id="heading-hero">
 					Construyo productos web modernos con enfoque full-stack
 				</h1>
 				<p>
@@ -79,8 +69,8 @@
 					sistema.
 				</p>
 			</section>
-			<section>
-				<h2>Enfoque técnico</h2>
+			<section id="enfoque" aria-labelledby="heading-enfoque">
+				<h2 id="heading-enfoque">Enfoque técnico</h2>
 				<p>
 					Frontend moderno con React y arquitectura de componentes
 					escalable.
@@ -91,8 +81,8 @@
 					sin perder orden SQL/NoSQL.
 				</p>
 			</section>
-			<section>
-				<h2>Proyectos</h2>
+			<section id="proyectos" aria-labelledby="heading-proyectos">
+				<h2 id="heading-proyectos">Proyectos</h2>
 				<p>
 					He construido proyectos personales y profesionales usando
 					diferentes tecnologías como React, Node.js, Express,
@@ -115,8 +105,8 @@
 					utilizadas y el impacto que tuvo.
 				</p>
 			</section>
-			<section>
-				<h2>Habilidades</h2>
+			<section id="stack" aria-labelledby="heading-stack">
+				<h2 id="heading-stack">Habilidades</h2>
 				<p>
 					No trabajo con herramientas por tendencia, sino por su
 					capacidad para construir productos rápidos, mantenibles y
@@ -129,8 +119,8 @@
 				<h3>Bases de datos</h3>
 				<p>SQL Server,MongoDB, MySQL, PostgreSQL.</p>
 			</section>
-			<section>
-				<h2>Servicios</h2>
+			<section id="servicios" aria-labelledby="heading-servicios">
+				<h2 id="heading-servicios">Servicios</h2>
 				<p>
 					Trabajo en proyectos donde la tecnología debe resolver una
 					necesidad real de producto, negocio o experiencia digital
@@ -148,8 +138,8 @@
 					y escalables.
 				</p>
 			</section>
-			<section>
-				<h2>Sobre mí</h2>
+			<section id="sobre-mi" aria-labelledby="heading-sobre-mi">
+				<h2 id="heading-sobre-mi">Sobre mí</h2>
 				<p>
 					Soy Full-Stack Developer y trabajo en la intersección entre
 					interfaz, lógica de producto y ejecución técnica. Me
@@ -157,8 +147,8 @@
 					claridad y estructura trabajen juntas.
 				</p>
 			</section>
-			<section>
-				<h2>BLOG</h2>
+			<section id="blog" aria-labelledby="heading-blog">
+				<h2 id="heading-blog">Blog</h2>
 				<p>
 					Comparto ideas, aprendizajes y decisiones técnicas sobre
 					desarrollo web, arquitectura, producto digital y
@@ -187,8 +177,8 @@
 					muestra lo que construyo, también muestra cómo pienso.
 				</p>
 			</section>
-			<section>
-				<h2>¿Tienes una idea, producto o necesidad técnica?</h2>
+			<section id="contacto" aria-labelledby="heading-contacto">
+				<h2 id="heading-contacto">¿Tienes una idea, producto o necesidad técnica?</h2>
 				<p>
 					Si necesitas desarrollar una experiencia web, lanzar un
 					producto, mejorar una aplicación existente o construir una
