@@ -1,0 +1,71 @@
+/** @format */
+@media (max-width: 712px) {
+  h1 {
+    line-height: 60px;
+  }
+  h1 > span {
+    font-size: var(--txt-7-size);
+    margin-left: 85px;
+  }
+  h1:before {
+    font-size: 40mm;
+    letter-spacing: -6mm;
+    position: relative;
+    top: 61px;
+    padding-right: 30px;
+    font-family: "Oswald-ExtraLight";
+  }
+  header {
+   
+    height: 85px;
+   
+  }
+
+  .social-page h1:before {
+    font-size: 22mm;
+    letter-spacing: -3mm;
+    position: relative;
+    top: 8px;
+    padding-right: 20px;
+    font-family: "Oswald-ExtraLight";
+  }
+}
+@media (max-width: 425px) {
+  .container_j {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  header {
+   
+    height: 100px;
+   
+  }
+  .social-page h1{
+    font-size: var(--txt-3-size);
+  }
+  .social-page h1 > span{
+    font-size: var(--txt-6-size); background-color: yellowgreen;
+     white-space: nowrap;
+   
+  }
+  .social-page h1:before {
+    font-size: 22mm;
+    letter-spacing: -3mm;
+    position: relative;
+    top: 8px;
+    padding-right: 30px;
+    font-family: "Oswald-ExtraLight";
+  }
+}
+@media screen and (max-width: 600px) {
+  nav{
+    position: relative;
+  }
+  a:not(.active) {display: none;}
+  nav a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}

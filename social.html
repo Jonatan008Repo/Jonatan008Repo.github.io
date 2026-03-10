@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://jonatan008repo.github.io/">
+  <meta name="description"
+    content="En la pagina de -mis redes- veras un listado de las redes  tanto profesionales como sociales de Jonatan Vergara Escobar,como son github, instagram, artstation, linkedin y mas.">
+  <meta name="theme-color" content="#171817">
+  <link rel="preload" as="font">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/font/font-awesome-4.7.0/css/font-awesome.min.css">
+  <title>Mis Redes</title>
+  <link rel="icon" href="assets/img/favicon.ico" />
+</head>
+
+<body class="dark-bg social-page">
+  <header>
+    <nav>
+      <section>
+        <a class="" href="index.html">Inicio</a>
+        <!-- <a class="inactive" href="media.html">Media</a>
+        <a class="inactive" href="proyectos.html">Proyectos</a>
+        <a class="inactive" href="Skills.html">Skills</a>
+        <a class="inactive" href="blog.html">Blog</a>  -->
+        <a class="active" href="social.html">Mis Redes</a>
+        <a class="menu-h"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      </section>
+    </nav>
+  </header>
+  <main class="container_j pt-0">
+    <h1 class="white-colot-txt">Mis Redes</h1>
+    <div class="list-social">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jonatan008Repo"><i
+          class="fa fa-github-square fa-2x" aria-hidden="true"></i>github</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://jonatan008.artstation.com/"><img
+          src="assets/img/logartstation.png" alt="logo de artstation en link del perfil de jonatan008.com">
+        artstation</a>
+      <a target="_blank" rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/jonatan-vergara-escobar-803057235"><i class="fa fa-linkedin-square fa-2x"
+          aria-hidden="true"></i>linkedin</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/_jonatan008/"><i
+          class="fa fa-instagram fa-2x" aria-hidden="true"></i>instagram</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/_JONATAN008"><i
+          class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>twitter</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://platzi.com/p/JONATAN008/">
+        <img src="assets/img/logoplatzi.png" alt="logo de platzi en link del perfil de jonatan008.com">
+        platzi</a>
+      <a target="_blank" rel="noopener noreferrer" href="mailto:maker@jonatan008.com"><i class="fa fa-envelope fa-2x"
+          aria-hidden="true"></i>e-mail</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://sketchfab.com/JONATAN008">
+        <img src="assets/img/libre-brand-sketchfab.svg" alt="logo de sketchfab en link del perfil de jonatan008.com">
+        sketchfab</a>
+    </div>
+  </main>
+  <footer>
+    <p>ALL RIGHTS RESERVED © 2022</p>
+     <a href="/legal.html">Terminos y condiociones</a>
+
+  </footer>
+  <!-- mensaje de cookkies con script -->
+  <div class="cookie-container">
+    <div class="cookie-content">
+      Este sitio web utiliza cookies para mejorar tu experiencia. Asumiré que estás de acuerdo con esto.
+      <div class="buttons">
+        <button class="item">Acepto</button>
+        <a class="item" href="legal.html" target="_blank">Leer más</a>
+      </div>
+    </div>
+  </div>
+  <script async>
+    const cookieContainer = document.querySelector(".cookie-container");
+    window.addEventListener('DOMContentLoaded', (event) => {
+      if (!localStorage.getItem("cookieBannerDisplayed")) {
+        console.log('DOM fully loaded and parsed');
+        cookieContainer.classList.add("active");
+      }
+      else {
+        cookieContainer.classList.remove("active");
+      }
+    });
+    const cookieButton = document.querySelector(".buttons .item");
+    cookieButton.addEventListener("click", () => {
+      localStorage.setItem("cookieBannerDisplayed", "true");
+      cookieContainer.classList.remove("active");
+    });
+  </script>
+  <!-- fin mensaje de cookkies con script -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Jonatan Vergara Escobar",
+      "url": "https://jonatan008.com/",
+      "image": "",
+      "sameAs": [
+        "https://twitter.com/_JONATAN008",
+        "https://www.instagram.com/_jonatan008/",
+        "https://www.linkedin.com/in/jonatan-vergara-escobar-803057235",
+        "https://github.com/Jonatan008Repo",
+        "https://jonatan008.com/"
+      ],
+      "jobTitle": "DEV"
+    }
+    </script>
+</body>
+
+</html>
