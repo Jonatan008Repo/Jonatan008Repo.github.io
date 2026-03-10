@@ -2,23 +2,60 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<!-- <base href="https://jonatan008.com/"> -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="theme-color" content="#171817" />
+
+		<!-- SEO básico -->
+		<title>Jonatan Vergara Escobar | Full-Stack Developer</title>
 		<meta
 			name="description"
-			content="Hola soy Jonatan Vergara Escobar soy desarrollador y te invito a visitar  mi pagina web." />
+			content="Full-Stack Developer especializado en JavaScript, React y Node.js. Construyo productos web modernos, rápidos y técnicamente sólidos." />
+		<meta name="author" content="Jonatan Vergara Escobar" />
+		<meta name="robots" content="index, follow" />
 		<link rel="canonical" href="https://jonatan008repo.github.io/" />
-		<link rel="preload" as="font" />
+
+		<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://jonatan008repo.github.io/" />
+		<meta property="og:title" content="Jonatan Vergara Escobar | Full-Stack Developer" />
+		<meta
+			property="og:description"
+			content="Full-Stack Developer especializado en JavaScript, React y Node.js. Construyo productos web modernos, rápidos y técnicamente sólidos." />
+		<meta property="og:image" content="https://jonatan008repo.github.io/assets/img/og-image.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="es_CL" />
+		<meta property="og:site_name" content="Jonatan 008" />
+
+		<!-- Twitter / X Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@_JONATAN008" />
+		<meta name="twitter:creator" content="@_JONATAN008" />
+		<meta name="twitter:title" content="Jonatan Vergara Escobar | Full-Stack Developer" />
+		<meta
+			name="twitter:description"
+			content="Full-Stack Developer especializado en JavaScript, React y Node.js. Construyo productos web modernos, rápidos y técnicamente sólidos." />
+		<meta name="twitter:image" content="https://jonatan008repo.github.io/assets/img/og-image.png" />
+
+		<!-- PWA / Browser -->
+		<meta name="theme-color" content="#0a0a0f" />
 		<link rel="icon" href="assets/img/favicon.ico" />
+
+		<!-- Preload fuente principal -->
+		<link
+			rel="preload"
+			href="assets/font/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin />
+
+		<!-- Estilos -->
 		<link rel="stylesheet" href="src/css/style.css" />
 		<link rel="stylesheet" href="src/css/responsive.css" />
 		<link
 			rel="stylesheet"
 			href="src/css/font/font-awesome-4.7.0/css/font-awesome.min.css" />
-		<title>Jonatan Vergara Escobar</title>
 		<!-- Google Analytics GA4 -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRZQWGY9EQ"></script>
 		<script>
@@ -47,14 +84,13 @@
 					<a href="#blog">Blog</a>
 					<a href="#sobre-mi">Sobre mí</a>
 					<a href="#contacto">Contacto</a>
-					<button class="menu-h" aria-label="Abrir menú" aria-expanded="false">
-						<i class="fa fa-bars" aria-hidden="true"></i>
-					</button>
+
 				</section>
 			</nav>
 		</header>
 		<main class="container_j">
 			<section id="hero" aria-labelledby="heading-hero">
+				<span class="hero__eyebrow">Full-Stack Developer</span>
 				<h1 id="heading-hero">
 					Construyo productos web modernos con enfoque full-stack
 				</h1>
@@ -68,8 +104,13 @@
 					interfaz, el backend y los datos trabajan como un solo
 					sistema.
 				</p>
+				<div class="btn-group">
+					<a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+					<a href="#contacto" class="btn btn--secondary">Contactar</a>
+				</div>
+
 			</section>
-			<section id="enfoque" aria-labelledby="heading-enfoque">
+			<section id="enfoque" class="reveal" aria-labelledby="heading-enfoque">
 				<h2 id="heading-enfoque">Enfoque técnico</h2>
 				<p>
 					Frontend moderno con React y arquitectura de componentes
@@ -81,31 +122,84 @@
 					sin perder orden SQL/NoSQL.
 				</p>
 			</section>
-			<section id="proyectos" aria-labelledby="heading-proyectos">
+			<section id="proyectos" class="reveal" aria-labelledby="heading-proyectos">
 				<h2 id="heading-proyectos">Proyectos</h2>
 				<p>
 					He construido proyectos personales y profesionales usando
 					diferentes tecnologías como React, Node.js, Express,
-					MongoDB, MySQL, entre otras. Puedes ver algunos de mis
-					proyectos en mi perfil de GitHub.
+					MongoDB, MySQL, entre otras.
 				</p>
-				<h3>Proyecto 1</h3>
-				<p>
-					Descripción breve del proyecto 1, destacando las tecnologías
-					utilizadas y el impacto que tuvo.
-				</p>
-				<h3>Proyecto 2</h3>
-				<p>
-					Descripción breve del proyecto 2, destacando las tecnologías
-					utilizadas y el impacto que tuvo.
-				</p>
-				<h3>Proyecto 3</h3>
-				<p>
-					Descripción breve del proyecto 3, destacando las tecnologías
-					utilizadas y el impacto que tuvo.
-				</p>
+				<div class="projects-grid">
+
+					<article class="project-card">
+						<div class="project-card__header">
+							<span class="project-card__year">2025</span>
+						</div>
+						<div class="project-card__body">
+							<h3 class="project-card__title">Proyecto 1</h3>
+							<p class="project-card__desc">
+								Descripción orientada al problema que resuelve y el
+								impacto que tuvo en el producto.
+							</p>
+							<ul class="project-card__stack" aria-label="Tecnologías usadas">
+								<li>React</li>
+								<li>Node.js</li>
+								<li>MongoDB</li>
+							</ul>
+						</div>
+						<div class="project-card__footer">
+							<a href="#" class="btn btn--primary">Ver demo</a>
+							<a href="https://github.com/Jonatan008Repo" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub →</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-card__header">
+							<span class="project-card__year">2025</span>
+						</div>
+						<div class="project-card__body">
+							<h3 class="project-card__title">Proyecto 2</h3>
+							<p class="project-card__desc">
+								Descripción orientada al problema que resuelve y el
+								impacto que tuvo en el producto.
+							</p>
+							<ul class="project-card__stack" aria-label="Tecnologías usadas">
+								<li>JavaScript</li>
+								<li>Express</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+						<div class="project-card__footer">
+							<a href="#" class="btn btn--primary">Ver demo</a>
+							<a href="https://github.com/Jonatan008Repo" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub →</a>
+						</div>
+					</article>
+
+					<article class="project-card">
+						<div class="project-card__header">
+							<span class="project-card__year">2024</span>
+						</div>
+						<div class="project-card__body">
+							<h3 class="project-card__title">Proyecto 3</h3>
+							<p class="project-card__desc">
+								Descripción orientada al problema que resuelve y el
+								impacto que tuvo en el producto.
+							</p>
+							<ul class="project-card__stack" aria-label="Tecnologías usadas">
+								<li>React</li>
+								<li>MySQL</li>
+								<li>REST API</li>
+							</ul>
+						</div>
+						<div class="project-card__footer">
+							<a href="#" class="btn btn--primary">Ver demo</a>
+							<a href="https://github.com/Jonatan008Repo" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub →</a>
+						</div>
+					</article>
+
+				</div>
 			</section>
-			<section id="stack" aria-labelledby="heading-stack">
+			<section id="stack" class="reveal" aria-labelledby="heading-stack">
 				<h2 id="heading-stack">Habilidades</h2>
 				<p>
 					No trabajo con herramientas por tendencia, sino por su
@@ -119,7 +213,7 @@
 				<h3>Bases de datos</h3>
 				<p>SQL Server,MongoDB, MySQL, PostgreSQL.</p>
 			</section>
-			<section id="servicios" aria-labelledby="heading-servicios">
+			<section id="servicios" class="reveal" aria-labelledby="heading-servicios">
 				<h2 id="heading-servicios">Servicios</h2>
 				<p>
 					Trabajo en proyectos donde la tecnología debe resolver una
@@ -138,7 +232,7 @@
 					y escalables.
 				</p>
 			</section>
-			<section id="sobre-mi" aria-labelledby="heading-sobre-mi">
+			<section id="sobre-mi" class="reveal" aria-labelledby="heading-sobre-mi">
 				<h2 id="heading-sobre-mi">Sobre mí</h2>
 				<p>
 					Soy Full-Stack Developer y trabajo en la intersección entre
@@ -147,7 +241,7 @@
 					claridad y estructura trabajen juntas.
 				</p>
 			</section>
-			<section id="blog" aria-labelledby="heading-blog">
+			<section id="blog" class="reveal" aria-labelledby="heading-blog">
 				<h2 id="heading-blog">Blog</h2>
 				<p>
 					Comparto ideas, aprendizajes y decisiones técnicas sobre
@@ -177,7 +271,7 @@
 					muestra lo que construyo, también muestra cómo pienso.
 				</p>
 			</section>
-			<section id="contacto" aria-labelledby="heading-contacto">
+			<section id="contacto" class="reveal" aria-labelledby="heading-contacto">
 				<h2 id="heading-contacto">¿Tienes una idea, producto o necesidad técnica?</h2>
 				<p>
 					Si necesitas desarrollar una experiencia web, lanzar un
@@ -189,8 +283,10 @@
 					soluciones donde claridad, ejecución y visión de producto
 					importan de verdad.
 				</p>
-        <h2>Hablemos de
-					tu próximo proyecto</h2>
+				<div class="btn-group">
+					<a href="mailto:" class="btn btn--primary">Enviar mensaje</a>
+					<a href="https://www.linkedin.com/in/jonatan-vergara-escobar-803057235" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">LinkedIn</a>
+				</div>
 			</section>
 		</main>
 		<footer>
@@ -217,23 +313,9 @@
 				</div>
 			</div>
 		</div>
-		<script async>
-			const cookieContainer = document.querySelector(".cookie-container")
-			window.addEventListener("DOMContentLoaded", (event) => {
-				if (!localStorage.getItem("cookieBannerDisplayed")) {
-					console.log("DOM fully loaded and parsed")
-					cookieContainer.classList.add("active")
-				} else {
-					cookieContainer.classList.remove("active")
-				}
-			})
-			const cookieButton = document.querySelector(".buttons .item")
-			cookieButton.addEventListener("click", () => {
-				localStorage.setItem("cookieBannerDisplayed", "true")
-				cookieContainer.classList.remove("active")
-			})
-		</script>
 		<!-- fin mensaje de cookkies con script -->
+		<script src="src/js/cookies.js" defer></script>
+		<script src="src/js/main.js" defer></script>
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org/",
