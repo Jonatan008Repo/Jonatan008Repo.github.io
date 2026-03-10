@@ -33,6 +33,50 @@
 	src: url("../../assets/font/static/Oswald-SemiBold.ttf");
 	font-display: swap;
 }
+
+@font-face {
+  font-family:"Space-Grotesk";
+  src: url("../../assets/font/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Space-Grotesk-Bold";
+  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Space-Grotesk-Light";
+  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Light.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Space-Grotesk-Medium";
+  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Space-Grotesk-Regular";
+  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Space-Grotesk-SemiBold";
+  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family:"Inter-Italic";
+  src: url("../../assets/font/Inter-Italic-VariableFont_opsz,wght.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family:"Inter";
+  src: url("../../assets/font/Inter-VariableFont_opsz,wght.ttf");
+  font-display: swap;
+}
+
+
 /*color*/
 :root {
 	--gray-0-color: #b8b8b8;
@@ -105,8 +149,8 @@
 	color: var(--dark-0-color);
 }
 * {
-	font-family: "Oswald-ExtraLight";
-	color: var(--gray-0-color);
+	font-family: "Inter";
+	color: var(--color-text-primary);
 }
 html,
 body {
@@ -131,34 +175,35 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Oswald-Bold";
+	font-family: "Space-Grotesk-Bold";
 	margin: 0px;
 }
 
 h1 {
-	font-size: var(--txt-1-size);
+	/*font-size: var(--txt-1-size);*/
+  font-size: clamp(2rem, var(--txt-1-size), 5rem);
 }
 h1 > span {
 	font-family: "Oswald-SemiBold";
 	font-size: var(--txt-7-size);
 }
 h2 {
-	font-size: var(--txt-2-size);
+	font-size:   clamp(1.75rem, var(--txt-2-size), 2.5rem);
 }
 h2 > span {
 	font-family: "Oswald-SemiBold";
 }
 h3 {
-	font-size: var(--txt-3-size);
+	font-size: clamp(1.5rem, var(--txt-3-size), 2rem);
 }
 h4 {
-	font-size: var(--txt-4-size);
+	font-size: clamp(1.25rem, var(--txt-4-size), 1.75rem);
 }
 h5 {
-	font-size: var(--txt-5-size);
+	font-size: clamp(1rem, var(--txt-5-size), 1.5rem);
 }
 h6 {
-	font-size: var(--txt-6-size);
+	font-size: clamp(0.875rem, var(--txt-6-size), 1.25rem);
 }
 h1:before {
 	content: "//";
@@ -194,10 +239,12 @@ p.dark-0-color-txt > strong > i {
 }
 p > strong,
 p > b {
-	font-family: "Oswald-Bold";
+	font-family: "Inter";
+  font-weight: bold;
 }
 p > address {
-	font-family: "Oswald-Light";
+	font-family: "Inter";
+  font-style: normal;
 }
 /*page error*/
 .the-flood {
