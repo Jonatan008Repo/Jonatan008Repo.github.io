@@ -69,3 +69,14 @@
     text-align: left;
   }
 }
+@media (max-width: 640px) {
+  .footer__top {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
