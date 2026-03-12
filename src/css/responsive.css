@@ -16,9 +16,9 @@
     font-family: "Oswald-ExtraLight";
   }
   header {
-   
+
     height: 85px;
-   
+
   }
 
   .social-page h1:before {
@@ -37,9 +37,9 @@
     margin-right: 2.5%;
   }
   header {
-   
+
     height: 100px;
-   
+
   }
   .social-page h1{
     font-size: var(--txt-3-size);
@@ -47,7 +47,7 @@
   .social-page h1 > span{
     font-size: var(--txt-6-size); background-color: yellowgreen;
      white-space: nowrap;
-   
+
   }
   .social-page h1:before {
     font-size: 22mm;
@@ -62,7 +62,7 @@
   nav{
     position: relative;
   }
-  a:not(.active) {display: none;}
+  header nav a:not(.active) {display: none;}
   nav a {
     display: block;
     float: none;
@@ -74,9 +74,23 @@
     flex-direction: column;
     gap: 24px;
   }
+  .footer__info {
+    max-width: 100%;
+  }
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+}
+@media (max-width: 425px) {
+  footer {
+    padding: 32px 4% 20px;
+  }
+  .footer__top {
+    gap: 20px;
+  }
+  .footer__social {
+    gap: 20px;
   }
 }
