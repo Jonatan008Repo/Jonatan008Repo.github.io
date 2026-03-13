@@ -365,7 +365,9 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://youtube.com/@jonatan2251kerneltalk?si=bRFrQMCXzU8_wMs7"
-						><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+						><i
+							class="fa fa-youtube-play fa-2x"
+							aria-hidden="true"></i
 						>youtube</a
 					>
 					<a
@@ -488,8 +490,104 @@
 			</div>
 		</div>
 		<!-- fin mensaje de cookkies con script -->
+		<div id="tsparticles"></div>
 		<script src="src/js/cookies.js" defer></script>
 		<script src="src/js/main.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+		<script type="text/javascript">
+			tsParticles.load("tsparticles", {
+				fullScreen: {
+					enable: true, // Activa modo pantalla completa
+					zIndex: -1, // Coloca detrás del contenido
+				},
+				interactivity: {
+					events: {
+						onhover: {
+							enable: true,
+							mode: "repulse", // Efecto de repulsión al pasar el mouse
+						},
+						onclick: {
+							enable: true,
+							mode: "push", // Agrega partículas al hacer clic
+						},
+						resize: true, // Ajusta al cambiar el tamaño de la ventana
+					},
+					modes: {
+						repulse: {
+							distance: 100, // Distancia de repulsión
+							duration: 0.4, // Duración del efecto
+						},
+						push: {
+							particles_nb: 3, // Número de partículas a agregar
+						},
+					},
+				},
+				particles: {
+					number: {
+						value: 17,
+						density: {
+							enable: true,
+							value_area: 800,
+						},
+					},
+					color: {
+						value: "#7c3aed",
+					},
+					shape: {
+						type: "square",
+						stroke: {
+							width: 1,
+							color: "#69abe1",
+						},
+						polygon: {
+							nb_sides: 5,
+						},
+					},
+					opacity: {
+						value: 0.5,
+						random: false,
+						anim: {
+							enable: false,
+							speed: 1,
+							opacity_min: 0.1,
+							sync: false,
+						},
+					},
+					size: {
+						value: 5,
+						random: true,
+						anim: {
+							enable: false,
+							speed: 4,
+							size_min: 0.1,
+							sync: false,
+						},
+					},
+					line_linked: {
+						enable: true,
+						distance: 300,
+						color: "#00d4ff",
+						opacity: 0.4,
+						width: 1,
+					},
+					move: {
+						enable: true,
+						speed: 1,
+						direction: "none",
+						random: false,
+						straight: false,
+						out_mode: "out",
+						bounce: false,
+						attract: {
+							enable: false,
+							rotateX: 1200,
+							rotateY: 1200,
+						},
+					},
+				},
+				retina_detect: true,
+			})
+		</script>
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org/",
