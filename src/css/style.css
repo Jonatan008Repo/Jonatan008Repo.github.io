@@ -35,47 +35,46 @@
 }
 
 @font-face {
-  font-family:"Space-Grotesk";
-  src: url("../../assets/font/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk";
+	src: url("../../assets/font/space_grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Space-Grotesk-Bold";
-  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Bold.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk-Bold";
+	src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Bold.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Space-Grotesk-Light";
-  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Light.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk-Light";
+	src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Light.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Space-Grotesk-Medium";
-  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Medium.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk-Medium";
+	src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Medium.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Space-Grotesk-Regular";
-  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Regular.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk-Regular";
+	src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-Regular.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Space-Grotesk-SemiBold";
-  src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-SemiBold.ttf");
-  font-display: swap;
+	font-family: "Space-Grotesk-SemiBold";
+	src: url("../../assets/font/space_grotesk/static/SpaceGrotesk-SemiBold.ttf");
+	font-display: swap;
 }
 
 @font-face {
-  font-family:"Inter-Italic";
-  src: url("../../assets/font/Inter-Italic-VariableFont_opsz,wght.ttf");
-  font-display: swap;
+	font-family: "Inter-Italic";
+	src: url("../../assets/font/Inter-Italic-VariableFont_opsz,wght.ttf");
+	font-display: swap;
 }
 @font-face {
-  font-family:"Inter";
-  src: url("../../assets/font/Inter-VariableFont_opsz,wght.ttf");
-  font-display: swap;
+	font-family: "Inter";
+	src: url("../../assets/font/Inter-VariableFont_opsz,wght.ttf");
+	font-display: swap;
 }
-
 
 /*color*/
 :root {
@@ -159,7 +158,9 @@
 .reveal {
 	opacity: 0;
 	transform: translateY(2rem);
-	transition: opacity 0.65s ease, transform 0.65s ease;
+	transition:
+		opacity 0.65s ease,
+		transform 0.65s ease;
 }
 .reveal.visible {
 	opacity: 1;
@@ -219,14 +220,14 @@ h6 {
 
 h1 {
 	/*font-size: var(--txt-1-size);*/
-  font-size: clamp(2rem, var(--txt-1-size), 5rem);
+	font-size: clamp(2rem, var(--txt-1-size), 5rem);
 }
 h1 > span {
 	font-family: "Oswald-SemiBold";
 	font-size: var(--txt-7-size);
 }
 h2 {
-	font-size:   clamp(1.75rem, var(--txt-2-size), 2.5rem);
+	font-size: clamp(1.75rem, var(--txt-2-size), 2.5rem);
 }
 h2 > span {
 	font-family: "Oswald-SemiBold";
@@ -254,6 +255,8 @@ h1:before {
 	height: 30px;
 	width: 30px;
 	margin-right: 10px;
+	filter: drop-shadow(2px 2px 5px #69abe1);
+	-webkit-filter: drop-shadow(2px 2px 5px #69abe1);
 }
 
 /* =====================
@@ -337,7 +340,6 @@ p {
 	margin: 0px;
 	text-align: justify;
 	padding-bottom: 10px;
-
 }
 p.dark-0-color-txt > strong {
 	color: var(--dark-0-color);
@@ -348,11 +350,11 @@ p.dark-0-color-txt > strong > i {
 p > strong,
 p > b {
 	font-family: "Inter";
-  font-weight: bold;
+	font-weight: bold;
 }
 p > address {
 	font-family: "Inter";
-  font-style: normal;
+	font-style: normal;
 }
 
 /* =====================
@@ -370,8 +372,11 @@ p > address {
 	font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
-	transition: background-color 0.2s ease, color 0.2s ease,
-				box-shadow 0.2s ease, transform 0.15s ease;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease,
+		box-shadow 0.2s ease,
+		transform 0.15s ease;
 	border: none;
 	line-height: 1;
 }
@@ -441,8 +446,10 @@ p > address {
 	border: 1px solid var(--color-border);
 	border-radius: 6px;
 	overflow: hidden;
-	transition: border-color 0.25s ease, box-shadow 0.25s ease,
-				transform 0.2s ease;
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		transform 0.2s ease;
 }
 .project-card:hover {
 	border-color: var(--color-primary);
@@ -862,7 +869,11 @@ footer a:hover {
 	font-family: "Space-Grotesk-SemiBold";
 	font-style: italic;
 	font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-	background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+	background: linear-gradient(
+		90deg,
+		var(--color-primary),
+		var(--color-secondary)
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -879,38 +890,99 @@ footer a:hover {
 	height: clamp(220px, 28vw, 380px);
 	border-radius: 50%;
 	background:
-		radial-gradient(circle at 30% 30%, rgba(0, 212, 255, 0.4), transparent 60%),
-		radial-gradient(circle at 70% 60%, rgba(124, 58, 237, 0.35), transparent 55%),
-		radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.08), transparent 70%);
+		radial-gradient(
+			circle at 30% 30%,
+			rgba(0, 212, 255, 0.4),
+			transparent 60%
+		),
+		radial-gradient(
+			circle at 70% 60%,
+			rgba(124, 58, 237, 0.35),
+			transparent 55%
+		),
+		radial-gradient(
+			circle at 50% 50%,
+			rgba(0, 212, 255, 0.08),
+			transparent 70%
+		);
 	box-shadow:
 		0 0 60px rgba(0, 212, 255, 0.25),
 		0 0 120px rgba(124, 58, 237, 0.15),
 		inset 0 0 80px rgba(0, 212, 255, 0.1);
 	position: relative;
 	animation: spherePulse 4s ease-in-out infinite alternate;
+	overflow: visible;
 }
 .hero__sphere::before {
 	content: "";
 	position: absolute;
-	inset: -2px;
+	inset: -8px;
 	border-radius: 50%;
-	border: 1px solid rgba(0, 212, 255, 0.2);
+	background: conic-gradient(
+		from 0deg,
+		rgba(0, 212, 255, 0.02) 0deg,
+		rgba(0, 212, 255, 0.38) 65deg,
+		rgba(0, 212, 255, 0.05) 140deg,
+		rgba(124, 58, 237, 0.32) 210deg,
+		rgba(0, 212, 255, 0.04) 300deg,
+		rgba(230, 124, 58, 0.28) 360deg
+	);
+	-webkit-mask: radial-gradient(circle, transparent 92%, #000 93%);
+	mask: radial-gradient(circle, transparent 92%, #000 93%);
+	opacity: 0.85;
+	animation: sphereRotateReverse 11s linear infinite;
+	-webkit-animation: sphereRotateReverse 11s linear infinite;
 }
 .hero__sphere::after {
 	content: "";
 	position: absolute;
-	inset: 15%;
+	inset: 12%;
 	border-radius: 50%;
-	border: 1px solid rgba(0, 212, 255, 0.1);
-	animation: sphereRotate 8s linear infinite;
+	background: conic-gradient(
+		from 0deg,
+		rgba(0, 212, 255, 0.02) 0deg,
+		rgba(0, 212, 255, 0.82) 24deg,
+		rgba(0, 212, 255, 0.08) 82deg,
+		rgba(124, 58, 237, 0.56) 132deg,
+		rgba(0, 212, 255, 0.08) 250deg,
+		rgba(0, 212, 255, 0.7) 320deg,
+		rgba(0, 212, 255, 0.02) 360deg
+	);
+	-webkit-mask: radial-gradient(circle, transparent 86%, #000 88%);
+	mask: radial-gradient(circle, transparent 86%, #000 88%);
+	filter: drop-shadow(0 20px 1px rgba(1, 255, 30, 0.55));
+	animation: sphereRotate 10s linear infinite;
+	will-change: transform;
+	-webkit-filter: drop-shadow(0 20px 1px rgba(0, 255, 51, 0.55));
+	-webkit-animation: sphereRotate 10s linear infinite;
 }
 @keyframes spherePulse {
-	0% { box-shadow: 0 0 60px rgba(0,212,255,0.25), 0 0 120px rgba(124,58,237,0.15); }
-	100% { box-shadow: 0 0 80px rgba(0,212,255,0.35), 0 0 160px rgba(124,58,237,0.25); }
+	0% {
+		box-shadow:
+			0 0 60px rgba(0, 212, 255, 0.25),
+			0 0 120px rgba(124, 58, 237, 0.15);
+	}
+	100% {
+		box-shadow:
+			0 0 80px rgba(0, 212, 255, 0.35),
+			0 0 160px rgba(124, 58, 237, 0.25);
+	}
 }
 @keyframes sphereRotate {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(360deg); }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes sphereRotateReverse {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
 }
 
 /* =====================
@@ -948,14 +1020,13 @@ footer a:hover {
 	border: 1px solid rgba(0, 212, 255, 0.08);
 	border-radius: 4px;
 	z-index: 1;
-	background:
-		repeating-linear-gradient(
-			0deg,
-			transparent,
-			transparent 14px,
-			rgba(0, 212, 255, 0.03) 14px,
-			rgba(0, 212, 255, 0.03) 15px
-		);
+	background: repeating-linear-gradient(
+		0deg,
+		transparent,
+		transparent 14px,
+		rgba(0, 212, 255, 0.03) 14px,
+		rgba(0, 212, 255, 0.03) 15px
+	);
 }
 
 /* Botón pequeño */
@@ -985,7 +1056,9 @@ footer a:hover {
 	font-size: 0.95rem;
 	color: var(--color-text-primary);
 	background-color: var(--color-bg-card);
-	transition: border-color 0.25s ease, box-shadow 0.25s ease;
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
 }
 .stack__pill:hover {
 	border-color: var(--color-primary);
@@ -1013,7 +1086,10 @@ footer a:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;
-	transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		transform 0.2s ease;
 	position: relative;
 	overflow: hidden;
 }
@@ -1024,7 +1100,12 @@ footer a:hover {
 	left: 0;
 	right: 0;
 	height: 2px;
-	background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--color-primary),
+		transparent
+	);
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
@@ -1103,7 +1184,10 @@ footer a:hover {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;
-	transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		transform 0.2s ease;
 }
 .blog-card:hover {
 	border-color: var(--color-secondary);
@@ -1180,8 +1264,11 @@ footer a:hover {
 	font-size: 0.95rem;
 	text-decoration: none;
 	text-transform: capitalize;
-	transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease,
-				color 0.2s ease;
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease,
+		transform 0.2s ease,
+		color 0.2s ease;
 }
 .social-links a:hover {
 	border-color: var(--social-accent);
