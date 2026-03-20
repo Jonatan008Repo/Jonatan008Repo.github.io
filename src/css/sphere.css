@@ -33,11 +33,11 @@
 	transform-style: preserve-3d;
 	backface-visibility: visible;
 	box-shadow:
-		0 0 46px rgba(6, 93, 255, 0.229),
-		inset 0 0 46px rgba(187, 0, 255, 0.24);
-	border: 5px ridge #ffffff5c;
-	filter: drop-shadow(0 0px 10px rgba(255, 0, 0, 0.253));
-	-webkit-filter: drop-shadow(0 0px 10px rgba(187, 0, 255, 0.56));
+		0 0 46px rgba(6, 93, 255, 0.142),
+		inset 0 0 46px rgba(187, 0, 255, 0.148);
+	border: 1px ridge #ffffff5c;
+	/* filter: drop-shadow(0 0px 10px rgba(255, 0, 0, 0.253)); */
+	/* -webkit-filter: drop-shadow(0 0px 10px rgba(187, 0, 255, 0.56)); */
 }
 .sphere i:nth-child(1) {
 	transform: rotateY(11.25deg);
