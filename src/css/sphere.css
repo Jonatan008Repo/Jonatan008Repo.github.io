@@ -1,0 +1,157 @@
+/**
+ * Decorative 3D sphere rendered with plain CSS (no SCSS runtime required).
+ *
+ * @format
+ */
+.hero__grid > .sphere {
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: center;
+	align-self: center;
+	z-index: 2;
+}
+.sphere {
+	--size: clamp(220px, 28vw, 380px);
+	position: relative;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	transform-style: preserve-3d;
+	transform-origin: center;
+	animation: sphere-rot 20s linear infinite reverse;
+	pointer-events: none;
+	-webkit-animation: sphere-rot 20s linear infinite reverse;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.sphere i {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	transform-style: preserve-3d;
+	backface-visibility: visible;
+	box-shadow:
+		0 0 46px rgba(6, 93, 255, 0.229),
+		inset 0 0 46px rgba(187, 0, 255, 0.24);
+	border: 5px ridge #ffffff5c;
+	filter: drop-shadow(0 0px 10px rgba(255, 0, 0, 0.253));
+	-webkit-filter: drop-shadow(0 0px 10px rgba(187, 0, 255, 0.56));
+}
+.sphere i:nth-child(1) {
+	transform: rotateY(11.25deg);
+}
+.sphere i:nth-child(2) {
+	transform: rotateY(22.5deg);
+}
+.sphere i:nth-child(3) {
+	transform: rotateY(33.75deg);
+}
+.sphere i:nth-child(4) {
+	transform: rotateY(45deg);
+}
+.sphere i:nth-child(5) {
+	transform: rotateY(56.25deg);
+}
+.sphere i:nth-child(6) {
+	transform: rotateY(67.5deg);
+}
+.sphere i:nth-child(7) {
+	transform: rotateY(78.75deg);
+}
+.sphere i:nth-child(8) {
+	transform: rotateY(90deg);
+}
+.sphere i:nth-child(9) {
+	transform: rotateY(101.25deg);
+}
+.sphere i:nth-child(10) {
+	transform: rotateY(112.5deg);
+}
+.sphere i:nth-child(11) {
+	transform: rotateY(123.75deg);
+}
+.sphere i:nth-child(12) {
+	transform: rotateY(135deg);
+}
+.sphere i:nth-child(13) {
+	transform: rotateY(146.25deg);
+}
+.sphere i:nth-child(14) {
+	transform: rotateY(157.5deg);
+}
+.sphere i:nth-child(15) {
+	transform: rotateY(168.75deg);
+}
+.sphere i:nth-child(16) {
+	transform: rotateY(180deg);
+}
+.sphere i:nth-child(17) {
+	transform: rotateX(191.25deg);
+}
+.sphere i:nth-child(18) {
+	transform: rotateX(202.5deg);
+}
+.sphere i:nth-child(19) {
+	transform: rotateX(213.75deg);
+}
+.sphere i:nth-child(20) {
+	transform: rotateX(225deg);
+}
+.sphere i:nth-child(21) {
+	transform: rotateX(236.25deg);
+}
+.sphere i:nth-child(22) {
+	transform: rotateX(247.5deg);
+}
+.sphere i:nth-child(23) {
+	transform: rotateX(258.75deg);
+}
+.sphere i:nth-child(24) {
+	transform: rotateX(270deg);
+}
+.sphere i:nth-child(25) {
+	transform: rotateX(281.25deg);
+}
+.sphere i:nth-child(26) {
+	transform: rotateX(292.5deg);
+}
+.sphere i:nth-child(27) {
+	transform: rotateX(303.75deg);
+}
+.sphere i:nth-child(28) {
+	transform: rotateX(315deg);
+}
+.sphere i:nth-child(29) {
+	transform: rotateX(326.25deg);
+}
+.sphere i:nth-child(30) {
+	transform: rotateX(337.5deg);
+}
+.sphere i:nth-child(31) {
+	transform: rotateX(348.75deg);
+}
+.sphere i:nth-child(32) {
+	transform: rotateX(360deg);
+}
+@keyframes sphere-rot {
+	to {
+		transform: rotateY(360deg) rotateZ(360deg);
+	}
+}
+@media (max-width: 960px) {
+	.hero__grid > .sphere {
+		grid-column: 1;
+		grid-row: 1;
+		margin-bottom: 1.2rem;
+	}
+	.sphere {
+		--size: 210px;
+	}
+}
+@media (max-width: 640px) {
+	.sphere {
+		--size: 170px;
+	}
+}
