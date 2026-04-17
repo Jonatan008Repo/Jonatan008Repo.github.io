@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /assets/
+Disallow: /errores/
+Disallow: /src/
+Disallow: /legal.html
+
+Sitemap: https://jonatan008.com/sitemap.xml
