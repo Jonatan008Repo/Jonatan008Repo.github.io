@@ -59,3 +59,7 @@ const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
 	header.classList.toggle("header--scrolled", window.scrollY > 40);
 });
+
+/* ── 4. Clase sticky visual para el header ─────────────────── */
+// El header ya usa position:fixed; solo alterna la clase visual
+// para acentuar el blur/fondo al hacer scroll.
