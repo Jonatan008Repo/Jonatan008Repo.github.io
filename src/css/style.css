@@ -189,7 +189,7 @@
 
 /* Enlace activo en nav */
 .nav__link--active {
-	color: var(--color-primary) !important;
+	color: var(--color-primary);
 }
 
 html,
@@ -649,6 +649,24 @@ nav section {
 	margin: 0 auto;
 	padding: 0.9rem 1.5rem;
 }
+
+/* Hamburger menu button (hidden by default, shown on mobile) */
+.nav__hamburger {
+	display: none;
+}
+
+/* Menu items container (desktop) */
+.nav__menu {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+/* Hide icons in desktop menu */
+.nav__menu a i {
+	display: none;
+}
+
 nav a {
 	color: var(--color-text-secondary);
 	font-family: "Space-Grotesk-Medium";
