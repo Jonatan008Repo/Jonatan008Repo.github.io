@@ -76,6 +76,18 @@
     align-items: flex-start;
     gap: 8px;
   }
+  .legal-main {
+    padding-top: 6rem;
+  }
+  .legal-page {
+    gap: 1rem;
+  }
+  .legal-article {
+    padding: 1.1rem;
+  }
+  .legal-page__address {
+    padding-left: 0.75rem;
+  }
 }
 
 @media (max-width: 425px) {
