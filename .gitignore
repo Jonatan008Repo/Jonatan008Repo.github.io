@@ -563,3 +563,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/vs,macos,windows,node
 
 Jonatan008Repo.github.io.code-workspace
+
+# GitHub
+.github/
