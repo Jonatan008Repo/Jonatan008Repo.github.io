@@ -21,13 +21,20 @@
   <header>
     <nav>
       <section>
-        <a class="" href="index.html">Inicio</a>
-        <!-- <a class="inactive" href="media.html">Media</a>
-        <a class="inactive" href="proyectos.html">Proyectos</a>
-        <a class="inactive" href="Skills.html">Skills</a>
-        <a class="inactive" href="blog.html">Blog</a>  -->
-        <a class="active" href="social.html">Mis Redes</a>
-        <a class="menu-h"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a class="nav__brand" href="index.html">Inicio</a>
+        <div class="nav__menu" id="navMenu">
+          <a href="index.html"><i class="fa fa-home"></i>Home</a>
+          <a class="nav__link--active" href="social.html"><i class="fa fa-share-alt"></i>Mis Redes</a>
+        </div>
+        <button
+          class="nav__hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </section>
     </nav>
   </header>
@@ -106,6 +113,7 @@
       "jobTitle": "DEV"
     }
     </script>
+    <script src="src/js/main.js" defer></script>
 </body>
 
 </html>

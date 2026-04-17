@@ -3,6 +3,7 @@
  * - Intersection Observer: animaciones de entrada reveal
  * - Nav: marcar enlace activo según sección visible
  * - Nav: clase sticky con blur al hacer scroll
+ * - Hamburger menu: toggle navigation on mobile
  */
 
 /* ── 1. Animaciones de entrada ─────────────────────────────── */
@@ -60,6 +61,32 @@ window.addEventListener("scroll", () => {
 	header.classList.toggle("header--scrolled", window.scrollY > 40);
 });
 
-/* ── 4. Clase sticky visual para el header ─────────────────── */
-// El header ya usa position:fixed; solo alterna la clase visual
-// para acentuar el blur/fondo al hacer scroll.
+/* ── 4. Hamburger menu toggle ────────────────────────────── */
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navMenu = document.getElementById("navMenu");
+const menuLinks = navMenu.querySelectorAll("a");
+
+// Toggle menu open/close
+hamburgerBtn.addEventListener("click", () => {
+	const isOpen = navMenu.classList.toggle("open");
+	hamburgerBtn.classList.toggle("open", isOpen);
+	hamburgerBtn.setAttribute("aria-expanded", isOpen);
+});
+
+// Close menu when clicking on a link
+menuLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		navMenu.classList.remove("open");
+		hamburgerBtn.classList.remove("open");
+		hamburgerBtn.setAttribute("aria-expanded", "false");
+	});
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+	if (!e.target.closest("nav")) {
+		navMenu.classList.remove("open");
+		hamburgerBtn.classList.remove("open");
+		hamburgerBtn.setAttribute("aria-expanded", "false");
+	}
+});

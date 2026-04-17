@@ -30,15 +30,26 @@
 							class="header-logo" />
 						JONATAN<b>008</b>
 					</a>
-					<a href="index.html#hero">Home</a>
-					<a href="index.html#proyectos">Projects</a>
-					<a href="index.html#stack">Stack</a>
-					<a href="index.html#servicios">Services</a>
-					<a href="index.html#redes">Redes</a>
-					<a href="index.html#contacto">Contact</a>
-					<a class="nav__link--active" href="legal.html" aria-current="page"
-						>Legal</a
-					>
+					<div class="nav__menu" id="navMenu">
+						<a href="index.html#hero"><i class="fa fa-home"></i>Home</a>
+						<a href="index.html#proyectos"><i class="fa fa-briefcase"></i>Projects</a>
+						<a href="index.html#stack"><i class="fa fa-code"></i>Stack</a>
+						<a href="index.html#servicios"><i class="fa fa-cog"></i>Services</a>
+						<a href="index.html#redes"><i class="fa fa-share-alt"></i>Redes</a>
+						<a href="index.html#contacto"><i class="fa fa-envelope"></i>Contact</a>
+						<a class="nav__link--active" href="legal.html" aria-current="page"
+							><i class="fa fa-file-text"></i>Legal</a
+						>
+					</div>
+					<button
+						class="nav__hamburger"
+						id="hamburgerBtn"
+						aria-label="Toggle navigation menu"
+						aria-expanded="false">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</section>
 			</nav>
 		</header>
@@ -250,5 +261,6 @@
 				<a href="/legal.html">Términos y condiciones</a>
 			</div>
 		</footer>
+		<script src="src/js/main.js" defer></script>
 	</body>
 </html>
