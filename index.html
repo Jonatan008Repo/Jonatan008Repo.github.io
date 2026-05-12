@@ -85,12 +85,20 @@
 					</a>
 					<div class="nav__menu" id="navMenu">
 						<a href="#hero"><i class="fa fa-home"></i>Home</a>
-						<a href="#proyectos"><i class="fa fa-briefcase"></i>Projects</a>
+						<a href="#proyectos"
+							><i class="fa fa-briefcase"></i>Projects</a
+						>
 						<a href="#stack"><i class="fa fa-code"></i>Stack</a>
-						<a href="#servicios"><i class="fa fa-cog"></i>Services</a>
-						<a href="#redes"><i class="fa fa-share-alt"></i>Redes</a>
+						<a href="#servicios"
+							><i class="fa fa-cog"></i>Services</a
+						>
+						<a href="#redes"
+							><i class="fa fa-share-alt"></i>Redes</a
+						>
 						<!-- <a href="#blog"><i class="fa fa-pencil"></i>Blog</a> -->
-						<a href="#contacto"><i class="fa fa-envelope"></i>Contact</a>
+						<a href="#contacto"
+							><i class="fa fa-envelope"></i>Contact</a
+						>
 					</div>
 					<button
 						class="nav__hamburger"
@@ -194,6 +202,7 @@
 							<a
 								href="https://www.khuanany.com"
 								target="_blank"
+								rel="noopener noreferrer"
 								class="btn btn--primary btn--sm"
 								>Ver Proyecto</a
 							>
@@ -464,13 +473,59 @@
 						class="btn btn--secondary"
 						><i class="fa fa-linkedin"></i> LinkedIn</a
 					>
-					<a
-						href="mailto:jonatan-008@outlook.com"
-						class="btn btn--secondary"
-						 aria-label="Enviar correo a jonatan-008@outlook.com">
-						<i class="fa fa-envelope"></i>
-						Email
-					</a>
+					<button
+						type="button"
+						class="btn btn--primary"
+						id="openContactForm"
+						aria-haspopup="dialog"
+						aria-controls="contactFormModal">
+						<i class="fa fa-wpforms" aria-hidden="true"></i>
+						Abrir Formulario
+					</button>
+				</div>
+				<div
+					id="contactFormModal"
+					class="contact-form-modal"
+					role="dialog"
+					aria-modal="true"
+					aria-labelledby="contactFormModalTitle"
+					hidden>
+					<div
+						class="contact-form-modal__overlay"
+						data-modal-close="true"></div>
+					<div class="contact-form-modal__panel">
+						<div class="contact-form-modal__header">
+							<h3 id="contactFormModalTitle">
+								Formulario de Contacto
+							</h3>
+							<button
+								type="button"
+								class="contact-form-modal__close"
+								id="closeContactForm"
+								aria-label="Cerrar formulario">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div class="contact-form-modal__body">
+							<iframe
+								width="640px"
+								height="480px"
+								src="https://forms.office.com/r/EwimTHju3L?embed=true"
+								frameborder="0"
+								marginwidth="0"
+								marginheight="0"
+								style="
+									border: none;
+									max-width: 100%;
+									max-height: 100vh;
+								"
+								allowfullscreen
+								webkitallowfullscreen
+								mozallowfullscreen
+								msallowfullscreen>
+							</iframe>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

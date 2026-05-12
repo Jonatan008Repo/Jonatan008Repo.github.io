@@ -1,6 +1,6 @@
-RewriteEngine On 
+RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://jonatan008.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://jonatan008repo.github.io/$1 [R=301,L]
 
 ErrorDocument 401 /errores/error.html
 ErrorDocument 403 /errores/error.html

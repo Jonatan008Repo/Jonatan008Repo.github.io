@@ -1494,6 +1494,90 @@ footer a:hover {
 	justify-content: center;
 }
 
+.contact-form-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 1300;
+	display: grid;
+	place-items: center;
+	padding: clamp(0.75rem, 3vw, 1.5rem);
+}
+.contact-form-modal[hidden] {
+	display: none;
+}
+.contact-form-modal__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(3, 6, 18, 0.82);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+}
+.contact-form-modal__panel {
+	position: relative;
+	z-index: 1;
+	width: min(1100px, 100%);
+	height: min(88vh, 860px);
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, #12192d 0%, #0f1428 100%);
+	border: 1px solid rgba(0, 212, 255, 0.3);
+	border-radius: 14px;
+	box-shadow: 0 22px 80px rgba(0, 212, 255, 0.2);
+	overflow: hidden;
+}
+.contact-form-modal__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.9rem 1rem;
+	border-bottom: 1px solid var(--color-border);
+	background-color: rgba(10, 10, 15, 0.75);
+}
+.contact-form-modal__header h3 {
+	margin: 0;
+	font-family: "Space-Grotesk-Medium";
+	font-size: clamp(1rem, 2vw, 1.2rem);
+	color: var(--color-primary);
+}
+.contact-form-modal__header h3::before {
+	content: none;
+}
+.contact-form-modal__close {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	border: 1px solid var(--color-border);
+	background: var(--color-bg-card);
+	color: var(--color-text-primary);
+	cursor: pointer;
+	transition: border-color 0.2s ease, color 0.2s ease;
+}
+.contact-form-modal__close:hover,
+.contact-form-modal__close:focus-visible {
+	border-color: var(--color-primary);
+	color: var(--color-primary);
+	outline: none;
+}
+.contact-form-modal__body {
+	flex: 1;
+	min-height: 0;
+}
+.contact-form-modal__body iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background-color: #10172b;
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+
 /* =====================
    Section dividers
    ===================== */
