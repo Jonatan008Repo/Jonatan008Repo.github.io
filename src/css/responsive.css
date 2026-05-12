@@ -199,6 +199,25 @@
   .legal-page__address {
     padding-left: 0.75rem;
   }
+
+  .contact-form-modal {
+    padding: 0.75rem;
+  }
+
+  .contact-form-modal__panel {
+    width: 100%;
+    height: 92vh;
+    border-radius: 10px;
+  }
+
+  .contact-form-modal__header {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .contact-form-modal__close {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 @media (max-width: 425px) {

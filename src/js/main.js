@@ -90,3 +90,41 @@ document.addEventListener("click", (e) => {
 		hamburgerBtn.setAttribute("aria-expanded", "false");
 	}
 });
+
+/* ── 5. Modal formulario de contacto ─────────────────────── */
+const openContactFormBtn = document.getElementById("openContactForm");
+const closeContactFormBtn = document.getElementById("closeContactForm");
+const contactFormModal = document.getElementById("contactFormModal");
+
+if (openContactFormBtn && closeContactFormBtn && contactFormModal) {
+	// Evita que un ancestro con transform limite el fixed del modal.
+	if (contactFormModal.parentElement !== document.body) {
+		document.body.appendChild(contactFormModal);
+	}
+
+	const closeContactModal = () => {
+		contactFormModal.hidden = true;
+		document.body.classList.remove("modal-open");
+		openContactFormBtn.focus();
+	};
+
+	openContactFormBtn.addEventListener("click", () => {
+		contactFormModal.hidden = false;
+		document.body.classList.add("modal-open");
+		closeContactFormBtn.focus();
+	});
+
+	closeContactFormBtn.addEventListener("click", closeContactModal);
+
+	contactFormModal.addEventListener("click", (event) => {
+		if (event.target instanceof HTMLElement && event.target.dataset.modalClose) {
+			closeContactModal();
+		}
+	});
+
+	document.addEventListener("keydown", (event) => {
+		if (event.key === "Escape" && !contactFormModal.hidden) {
+			closeContactModal();
+		}
+	});
+}
